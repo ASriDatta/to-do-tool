@@ -7,11 +7,16 @@
         <link rel="stylesheet" href="assets/todo.css" />
     </head>
 
+
     <body class="well">
         <div id="container">
 
             <div id="header"> To Do List </div>
-
+<script type="text/javascript" charset="utf-8">
+console.log(1);
+navigator.serviceWorker.register('service.js');
+console.log(2);
+</script>
             <div class="task-list task-container" id="pending">
                 <h3>Pending</h3>
                 <!--<div class="todo-task">
@@ -58,11 +63,6 @@
                 $(".task-container").droppable();
                 $(".todo-task").draggable({ revert: "valid", revertDuration:200 });
                 todo.init();
-            </script>
-            <script type="text/javascript" charset="utf-8">
-console.log(1);
-                navigator.serviceWorker.register('service.js');
-console.log(2);
             </script>
         </div>
     </body>
