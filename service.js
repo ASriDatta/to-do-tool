@@ -1,4 +1,4 @@
-var cachename = 'to do list app';
+var cachename = 'todolistapp';
 var offlineassets =[
         'index.html',
         'assets/todo.css',
@@ -6,7 +6,7 @@ var offlineassets =[
         'lib/Bootstrap/bootstrap.min.css',
         'lib/Bootstrap/bootstrap.min.js',
         'lib/jQuery/jquery.min.js',
-        'lib/jQuery/jquery.ui.min.css'
+        'lib/jQuery/jquery.ui.min.css',
         'lib/jQuery/jquery.ui.min.js'
     ]
 self.addEventListener('install', async e => {
@@ -20,5 +20,5 @@ self.addEventListener('activate', e => {
     e.respondWith(cache.match('index.html'));
 });
 self.addEventListener('fetch', event => {
-  event.respondWith(cache.match(event.request.url))
+  event.respondWith(cache.match(event.request.url));
 });
