@@ -1,0 +1,24 @@
+{
+    "name":"to do list",
+    "short_name":"asd",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#5900b3",
+    "theme_color":"blue",
+    "scope": ".",
+    "description":"This is a PWA tutorial.",
+    "icons": [
+    {
+      "src": "path/to/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
+},
+    {
+      "src": "path/to/maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+    ]
+}
